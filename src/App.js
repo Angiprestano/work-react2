@@ -3,7 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MyNav from "./Component/MyNav";
 import MyFooter from "./Component/MyFooter";
 import Welcome from "./Component/Welcome";
-import AllTheBooks from "./Component/AllTheBooks";
+// import AllTheBooks from "./Component/AllTheBooks";
+import Booklist from "./Component/Booklist";
+import romance from "./Data/romance.json";
 
 function App() {
   return (
@@ -11,8 +13,8 @@ function App() {
       <header>
         <MyNav />
         <Welcome />
+        <Booklist arrayOfBooks={romance} />
         <MyFooter />
-        <AllTheBooks />
       </header>
     </div>
   );
