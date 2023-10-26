@@ -5,7 +5,7 @@ import MyFooter from "./Component/MyFooter";
 import Welcome from "./Component/Welcome";
 // import AllTheBooks from "./Component/AllTheBooks";
 import Booklist from "./Component/Booklist";
-import romance from "./Data/romance.json";
+import scifi from "./Data/scifi.json";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <header>
         <MyNav />
         <Welcome />
-        <Booklist arrayOfBooks={romance} />
+        <Booklist arrayOfBooks={scifi} />
         <MyFooter />
       </header>
     </div>

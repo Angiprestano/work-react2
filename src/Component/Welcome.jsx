@@ -6,7 +6,7 @@ const Welcome = () => {
     <Container>
       <Row>
         <Col md={8}></Col>
-        <Alert variant="info">
+        <Alert variant="warning">
           <Alert.Heading className="fw-bold">Welcome</Alert.Heading>
           <p>
             Hi, this your netx favorite online-library. You can shop any book

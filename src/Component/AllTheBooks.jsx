@@ -8,7 +8,7 @@ const AllTheBooks = () => {
         {romanceBooks.map((book, index) => {
           return (
             <Col xs={6} sm={4} md={3} lg={2} key={index}>
-              <Card style={{ width: "13rem" }}>
+              <Card>
                 <Card.Img
                   variant="top"
                   src={book.img}
