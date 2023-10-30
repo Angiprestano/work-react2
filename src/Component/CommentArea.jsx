@@ -39,15 +39,16 @@ class CommentArea extends Component {
       console.log("Error", error);
     }
   };
-  componentDidMount() {
+  componentDidUpdate(prevProps, prevState) {
+    // if (prevProps.bookAsin !== this.props.bookAsin) {
     this.getComments();
+    // }
   }
   render() {
     return (
       <>
         <AddComment />
         <CommentList />
-        <p>Hi</p>
         <p>{this.state.Maracas.comment}</p>
         <p>{this.state.Maracas.rate}</p>
         <p>{this.state.Maracas.elementId}</p>

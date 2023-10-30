@@ -10,6 +10,7 @@ class singBook extends Component {
     return (
       <Card
         onClick={() => {
+          this.props.setBook(this.props.OneBook.asin);
           if (this.state.selected === false) {
             this.setState({
               selected: true,
@@ -21,7 +22,7 @@ class singBook extends Component {
           }
         }}
         className={`border-2 border border-info ${
-          this.state.selected ? "border-5 border-info" : ""
+          this.state.selected ? "border-5 border-danger" : ""
         }`}
       >
         <Card.Img
@@ -38,9 +39,9 @@ class singBook extends Component {
             Add to cart
           </Button>
         </Card.Body>
-        {this.state.selected && (
-          <CommentArea bookId={this.props.OneBook.asin} />
-        )}
+        {/*{this.state.selected && (
+          <CommentArea bookId={this.props.OneBook.asin} /> 
+       )} */}
       </Card>
     );
   }

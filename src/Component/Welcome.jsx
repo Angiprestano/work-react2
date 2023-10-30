@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Alert from "react-bootstrap/Alert";
 
 const Welcome = () => {
@@ -15,7 +15,11 @@ const Welcome = () => {
           <hr />
           <p className="mb-0">Just start to search your next favorite book!</p>
         </Alert>
+        <Form.Label htmlFor="inputPassword5">Search your book</Form.Label>
+        <Form.Control type="text" id="inputPassword5" />
+        <Form.Text id="passwordHelpBlock" muted></Form.Text>
       </Row>
+      <Button className="mt-2">Search</Button>
     </Container>
   );
 };
